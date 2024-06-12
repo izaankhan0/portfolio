@@ -185,6 +185,13 @@ img[src="./media/1.png"] {
     left: 15px;
     cursor: pointer;
 }
+img[src="./media/2.png"] {
+    height: 12px;
+    position: absolute;
+    bottom: 2%;
+    left: 15px;
+    cursor: pointer;
+}
 
 .frame > p{
     position: absolute;
