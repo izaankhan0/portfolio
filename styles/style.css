@@ -86,30 +86,94 @@ h1>span {
 .img-pack {
     position: absolute;
     left: 11px;
-    top: 35%;
+    bottom: 35%;
     display: flex;
     flex-direction: column;
     /* background-color: #09BB00; */
 }
 
-.img-pack>img {
+.img-pack> .tooltip-wrapper >img {
     height: 20px;
     margin-top: 20px;
     filter: brightness(0.7);
     cursor: pointer;
 }
+.img-pack> .tooltip-wrapper >img:hover{
+    filter: brightness(1);
+
+}
+
+/* Basic styles for the image pack and tooltips */
+.img-pack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tooltip-wrapper {
+    position: relative;
+    display: inline-block;
+    /* margin: 10px; */
+}
+
+.tooltip-container {
+    cursor: pointer;
+}
+
+.tool-box {
+    visibility: hidden;
+    width: 80px; /* Adjust as needed */
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 1%; 
+    left: 180%;
+    font-size: 14px;
+    /* transform: translateX(-50%); */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.tool-box-T {
+    min-width: 120px;
+}
+
+/* Tooltip arrow styling */
+.tool-box::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -5px; /* Position the arrow to the left of the tooltip */
+    transform: translateY(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+}
+
+/* Show the tooltip on hover */
+.tooltip-wrapper:hover .tool-box {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
 
 .vid-1-1{
     position: absolute;
-    left: 700px;
-    bottom: 50px;
+    left: 50%;
+    bottom: 5%;
     z-index: -10;
     
 }
 .vid-1-2{
     position: absolute;
-    right: 700px;
-    top: 50px;
+    right: 50%;
+    top: 5%;
     z-index: -10;
     
 }
@@ -122,10 +186,6 @@ img[src="./media/1.png"] {
     cursor: pointer;
 }
 
-.container {
-
-    background-image: url(../media/vid1.mp4);
-}
 .frame > p{
     position: absolute;
     /* bottom: 2px; */
