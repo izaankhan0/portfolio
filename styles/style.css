@@ -9,7 +9,10 @@
     color: aliceblue;
 
 }
-
+.container{
+    position: relative;
+    bottom: 720px;
+}
 body {
     background-color: rgb(0, 7, 0);
 }
@@ -18,9 +21,9 @@ body {
     position: -webkit-sticky;
     /* For Safari */
     /* position: sticky; */
-    position: absolute;
+    position: sticky;
     left: 14px;
-    top: 0;
+    top: 10px;
     width: calc(100% - 25px);
     height: 97vh;
     margin: 10px auto;
@@ -168,14 +171,14 @@ h1>span {
     position: absolute;
     left: 50%;
     bottom: 5%;
-    z-index: -10;
+    z-index: -10000000;
     
 }
 .vid-1-2{
     position: absolute;
     right: 50%;
     top: 5%;
-    z-index: -10;
+    z-index: -100000000;
     
 }
 
@@ -315,6 +318,51 @@ h2 > span{
     right: 7px;
     margin-bottom: 10px;
 }
-/* .span-red{
-    color: red;
-} */
+
+.projects{
+    height: 100vh;
+    z-index: 10000000;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: 100px;
+}
+
+.heading{
+    z-index: 20000;
+    display: inline-block;
+}
+.green{
+    color: #09BB00;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+@keyframes un-typing {
+    from { width: 100% }
+    to { width: 0 }
+  }
+
+  h4{
+        overflow: hidden;
+        border-right: .15em solid rgb(27, 160, 0);
+        white-space: nowrap;
+        font-size: 1.6rem;
+        width: 0;
+        font-size: 80px;
+        font-weight: 300; 
+    }
+
+h4.jam{
+    animation: un-typing 1s forwards;
+
+}
+        
+h4.jam-active{
+    animation: typing 1s forwards;
+    /* transform: scale(2); */
+}
+
+

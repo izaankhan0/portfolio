@@ -18,3 +18,23 @@ function currentLightChanger(){
 
     }
 }
+
+
+
+window.addEventListener('scroll', reveal);
+
+        function reveal() {
+            const reveals = document.querySelectorAll('.jam');
+
+            for (let i = 0; i < reveals.length; i++) {
+                const winHeight = window.innerHeight;
+                const revealtop = reveals[i].getBoundingClientRect().top;
+                const revealPoint = 150;
+
+                if (revealtop < winHeight - revealPoint) {
+                    reveals[i].classList.add('jam-active');
+                } else {
+                    reveals[i].classList.remove('jam-active');
+                }
+            }
+        }

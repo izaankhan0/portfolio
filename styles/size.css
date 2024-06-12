@@ -86,3 +86,18 @@
         bottom: 20%;
     }
 }
+@media (max-height:720px) {
+    .container{
+        bottom: 680px;
+    }
+}
+@media (max-height:660px) {
+    .container{
+        bottom: 620px;
+    }
+}
+@media (max-height:600px) {
+    .container{
+        bottom: 590px;
+    }
+}
