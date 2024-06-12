@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset some basic styles */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+
+.sticky-frame {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    width: calc(100% - 40px); /* Adjust the width as per the margin you want from the sides */
+    margin: 0 auto;
+    border: 2px solid black; /* Style the frame's border */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white; /* Background color of the frame */
+    z-index: 1000; /* Make sure the frame is above other content */
+}
+
+/* Center the heading */
+.sticky-frame h1 {
+    margin: 0;
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="sticky-frame">
+        <h1>My Portfolio</h1>
+    </div>
+    <div class="content">
+        <!-- Your website content goes here -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec diam sit amet urna...</p>
+    </div>
+</body>
+</html>

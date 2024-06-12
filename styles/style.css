@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    box-sizing: border-box;
+    color: aliceblue;
+
+}
+body{
+    background-color: rgb(0, 7, 0);
+}
+.frame{
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    width: calc(100% - 25px); 
+    height: 97vh;
+    margin: 10px auto;
+    border: 0.5px solid rgb(196, 196, 196); /* Style the frame's border */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    overflow: hidden;
+    z-index: -10;
+    
+}
+.sub-frame-1{
+    border: solid #9c9c9c 0.5px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-bottom: 0.2px;
+    border-top: 0.2px;
+    left: 40px;
+    /* top: 10px; */
+    /* margin-right: 20px;  */
+    overflow: hidden;
+
+    
+}
+
+.sub-frame-2{
+    border: solid #9c9c9c 1px;
+    height: calc(92% - 25px);
+    width: 100%;
+    position: absolute;
+    border-left: 0.2px;
+    border-right: 0.2px;
+    top: 40px;
+    /* bottom: 40px; */
+    overflow: hidden;
+
+}
+
+h1{
+    color: aliceblue;
+    margin: 0;
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
+    position: relative;
+    bottom: 7px;
+    font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+
+}
+
+h1 > span{
+    color: #09BB00;
+    font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+
+}
+.img-pack{
+    position: absolute;
+    left: 11px;
+    top: 35%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: #09BB00; */
+}
+.img-pack > img{
+    height: 20px;
+    margin-top: 20px;
+    filter: brightness(0.7); /* 0.5 means 50% brightness, adjust as needed */
+    cursor: pointer;
+}
+
+img[src="./media/10.png"]{
+    /* filter: hue-rotate(90deg) saturate(2); */
+}
+img[src="./media/1.png"]{
+    height: 12px;
+    position: absolute;
+    bottom: 2%;
+    left: 15px;
+    cursor: pointer;
+}

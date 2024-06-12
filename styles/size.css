@@ -1,0 +1,8 @@
+@media (max-height:540px) {
+    img[src="./media/1.png"]{
+        height: 12px;
+        position: absolute;
+        bottom: 1%;
+        left: 15px;
+    }
+}
