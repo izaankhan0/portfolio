@@ -5,7 +5,6 @@
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
-    /* font-weight: 700; */
     box-sizing: border-box;
     color: aliceblue;
 
@@ -218,3 +217,41 @@ img[src="./media/2.png"] {
     filter: brightness(1);
 
 }
+
+
+
+/* REAL WEBSITE CODE  */
+
+.main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h2{
+    font-size: 70px;
+    text-align: center;
+    font-weight: 300;
+}
+h2 > span{
+    color: #09BB00;
+    font-weight: 400;
+}
+.main > p{
+    text-align: center;
+    color: gray;    
+}
+.main-p-2{
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.main-p-1{
+    position: relative;
+    right: 7px;
+    margin-bottom: 10px;
+}
+/* .span-red{
+    color: red;
+} */
