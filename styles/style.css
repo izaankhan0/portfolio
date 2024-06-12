@@ -30,7 +30,7 @@ body {
     justify-content: center;
     /* align-items: center; */
     overflow: hidden;
-    z-index: -10;
+    /* z-index: -10; */
 
 }
 
@@ -72,6 +72,8 @@ h1 {
     bottom: 7px;
     font-family: "Chakra Petch", sans-serif;
     font-weight: 400;
+    z-index: 10000;
+
 
 }
 
@@ -191,12 +193,16 @@ img[src="./media/2.png"] {
     left: 15px;
     cursor: pointer;
 }
-
+.green-dot-container, .img-pack, .img-pack-2{
+    z-index: 2000;
+}
 .frame > p{
     position: absolute;
     /* bottom: 2px; */
     bottom: 1%;
     color: #e2e2e2;
+    z-index: 10000;
+    
 
 }
 .img-pack-2{
@@ -217,7 +223,61 @@ img[src="./media/2.png"] {
     filter: brightness(1);
 
 }
+.packet-3{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.packet-3 > i{
+    margin: 0px 4px;
+    font-size: 20px;
+    /* border: solid 2px black; */
+    filter: brightness(0.7);
 
+}
+.packet-3 > i:hover{
+
+    filter: brightness(1);
+cursor: pointer;
+}
+
+
+
+.outer-wrapper {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden; /* Hide overflow */
+}
+
+.inner-wrapper {
+    display: flex;
+    width: 200%;
+    animation: scroll 20s linear infinite;
+}
+
+.inner-wrapper p {
+    width: 50%;
+    text-align: center;
+    margin: 0;
+    font-size: 270px;
+    font-weight: 700;
+    color: #9c9c9c0d;
+    /* z-index: -2000; */
+    user-select: none;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
 
 
 /* REAL WEBSITE CODE  */
@@ -233,6 +293,7 @@ h2{
     font-size: 70px;
     text-align: center;
     font-weight: 300;
+    z-index: 10000;
 }
 h2 > span{
     color: #09BB00;
@@ -240,7 +301,9 @@ h2 > span{
 }
 .main > p{
     text-align: center;
-    color: gray;    
+    color: gray;   
+    z-index: 10000;
+
 }
 .main-p-2{
     font-family: "Chakra Petch", sans-serif;
