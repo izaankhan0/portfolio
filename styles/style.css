@@ -502,10 +502,31 @@ h5{
     /* transform: rotate(10deg); */
 }
 .proj:hover .proj-right img {
-    transform: scale(1.1); 
+    transform: scale(0.96); 
 }
 
+
+
+/* Typing effect */
+h5 {
+    overflow: hidden; /* Ensures the content is hidden outside the width of the container */
+    border-right: 0.15em solid; /* The cursor */
+    white-space: nowrap; /* Prevents text from wrapping to the next line */
+    visibility: hidden;
+}
 h5.jam-active{
+    visibility: visible;
+    animation: typing 2s steps(30, end), blink-caret 0.75s step-end infinite;
 
 }
-.proj:hover .proj-right img { margin-left: 30px; }
+/* Keyframes for typing */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+/* Keyframes for blinking cursor */
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
+}
