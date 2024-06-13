@@ -399,8 +399,8 @@ h4.jam-active{
     border: solid 2px white;
     display: flex;
     justify-content: space-between;
-    /* justify-content: ce; */
-    /* align-items:center; */
+    cursor: pointer;
+    
 }
 .year{
     font-family: "Chakra Petch", sans-serif;
@@ -425,6 +425,7 @@ h5{
     margin-left: 30px;
     align-self: center;
     font-weight: 400;
+    transition: 100ms ease-in;
 }
 .proj > .proj-right> a > img{
     height: 197px;
@@ -439,6 +440,13 @@ h5{
     transform: translateX(-150px);
     opacity: 0;
     transition: all 1s ease;
+/* From https://css.glass */
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(17.3px);
+    -webkit-backdrop-filter: blur(17.3px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .proj.jam-active{
@@ -465,7 +473,7 @@ h5{
 }
 
 .proj-2, .proj-4{
-    transform: translateX(150px);
+    transform: translateX(-150px);
     opacity: 0;
     transition: all 1s ease;
 }
@@ -478,3 +486,26 @@ h5{
     transform: translateX(0px);
     opacity: 1;
 }
+
+.proj-right>a>img{
+    transform: scale(0.5);
+    /* transform: rotate(0deg); */
+    transition: 200ms ease-in;
+    /* position: relative;
+    right: 20px;
+    bottom: 30px; */
+}
+.proj-right>a>img.jam-active{
+    transform: scale(0.9);
+    border: solid 2px #9c9c9c;
+    border-radius: 5px;
+    /* transform: rotate(10deg); */
+}
+.proj:hover .proj-right img {
+    transform: scale(1.1); 
+}
+
+h5.jam-active{
+
+}
+.proj:hover .proj-right img { margin-left: 30px; }
