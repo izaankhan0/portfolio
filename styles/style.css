@@ -375,9 +375,6 @@ h2>span {
     display: inline-block;
 }
 
-.green {
-    color: #09BB00;
-}
 
 @keyframes typing {
     from {
@@ -691,12 +688,10 @@ h7 {
 }
 
 
-.small-about-content > p{
-    padding-left: 10px;
-}
 .small-about-content{
     padding: 20px 10px;
     padding-top: 8px;
+    font-size: 19px;
 
 }
 .about-box-1 {
@@ -721,7 +716,10 @@ h7 {
 }
 
 .small-about-content>img {
-    height: 30%;
+    height: 32%;
+    position: relative;
+    left: 60px;
+    transition: 1s ease;
 }
 
 
@@ -742,5 +740,71 @@ h7 {
 }   
 .small-about-content > p{
     font-family: "Chakra Petch", sans-serif;
+    padding-left: 10px;
+    }
+    
+    .small-about-content>a>p{
+    font-family: "Chakra Petch", sans-serif;
+    padding-left: 10px;
+    text-decoration: none;
+    transition: 300ms ease;
 
+}
+    .small-about-content>a{
+    text-decoration: none;
+
+}
+.small-about-content>a>p:hover{
+    color: #0cf500;
+}
+
+.small-about-content>img:hover{
+    transform: translateY(-30px);
+    transform: translateX(-30px);
+    /* transform: translateY(40px); */
+
+}
+
+.portrait{
+    background-image: url(../media/bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.img-portrait.jam-active{
+    transform: translateY(-40px);
+
+}
+
+.green{
+    color: #0cf500;
+    display: inline-block;
+    font-weight: 500;
+}
+.blue{
+    color: blue;
+    display: inline-block;
+    font-weight: 500;
+}
+.red{
+    color: rgb(206, 0, 0);
+    display: inline-block;
+    font-weight: 500 !important;
+    
+}
+.orange{
+    color: rgb(230, 88, 0);
+    display: inline-block;
+    font-weight: 500;
+    
+}
+.aqua{
+    color: rgb(0, 226, 226);
+    display: inline-block;
+    font-weight: 500;
+}
+.purple{
+    color: purple;
+    display: inline-block;
+    font-weight: 500;
 }
