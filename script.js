@@ -80,3 +80,37 @@ window.addEventListener('scroll', reveal);
         //         e.preventDefault();
         //     }
         // });
+        document.querySelectorAll('.about-box').forEach(box => {
+            box.style.position = 'absolute';
+            box.style.zIndex = 1000;
+        
+            box.addEventListener('mousedown', function(e) {
+                e.preventDefault();
+        
+                let shiftX = e.clientX - box.getBoundingClientRect().left;
+                let shiftY = e.clientY - box.getBoundingClientRect().top;
+                shiftX = shiftX + 242
+                shiftY = shiftY + 28
+                function moveAt(pageX, pageY) {
+                    box.style.left = pageX - shiftX + 'px';
+                    box.style.top = pageY - shiftY + 'px';
+                }
+        
+                moveAt(e.pageX, e.pageY);
+        
+                function onMouseMove(event) {
+                    moveAt(event.pageX, event.pageY);
+                }
+        
+                document.addEventListener('mousemove', onMouseMove);
+        
+                document.addEventListener('mouseup', function onMouseUp() {
+                    document.removeEventListener('mousemove', onMouseMove);
+                    document.removeEventListener('mouseup', onMouseUp);
+                });
+        
+                box.ondragstart = function() {
+                    return false;
+                };
+            });
+        });
