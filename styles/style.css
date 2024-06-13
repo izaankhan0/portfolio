@@ -10,15 +10,16 @@
 
 }
 
-.container{
+.container {
     width: 100%;
 
     position: relative;
     bottom: 720px;
     /* height: 500vh !important; */
-height: auto !important;
+    height: auto !important;
     /* overflow: hidden; */
 }
+
 body {
     background-color: rgb(0, 7, 0);
     display: flex;
@@ -108,13 +109,14 @@ h1>span {
     /* background-color: #09BB00; */
 }
 
-.img-pack> .tooltip-wrapper >img {
+.img-pack>.tooltip-wrapper>img {
     height: 20px;
     margin-top: 20px;
     filter: brightness(0.7);
     cursor: pointer;
 }
-.img-pack> .tooltip-wrapper >img:hover{
+
+.img-pack>.tooltip-wrapper>img:hover {
     filter: brightness(1);
 
 }
@@ -142,7 +144,8 @@ h1>span {
 
 .tool-box {
     visibility: hidden;
-    width: 80px; /* Adjust as needed */
+    width: 80px;
+    /* Adjust as needed */
     background-color: black;
     color: #fff;
     text-align: center;
@@ -150,13 +153,14 @@ h1>span {
     padding: 5px;
     position: absolute;
     z-index: 1;
-    bottom: 1%; 
+    bottom: 1%;
     left: 180%;
     font-size: 14px;
     /* transform: translateX(-50%); */
     opacity: 0;
     transition: opacity 0.3s;
 }
+
 .tool-box-T {
     min-width: 120px;
 }
@@ -166,7 +170,8 @@ h1>span {
     content: "";
     position: absolute;
     top: 50%;
-    left: -5px; /* Position the arrow to the left of the tooltip */
+    left: -5px;
+    /* Position the arrow to the left of the tooltip */
     transform: translateY(-50%);
     border-width: 5px;
     border-style: solid;
@@ -183,19 +188,20 @@ h1>span {
 
 
 
-.vid-1-1{
+.vid-1-1 {
     position: absolute;
     left: 50%;
     bottom: 5%;
     z-index: -10000000;
-    
+
 }
-.vid-1-2{
+
+.vid-1-2 {
     position: absolute;
     right: 50%;
     top: 5%;
     z-index: -100000000;
-    
+
 }
 
 img[src="./media/1.png"] {
@@ -205,6 +211,7 @@ img[src="./media/1.png"] {
     left: 15px;
     cursor: pointer;
 }
+
 img[src="./media/2.png"] {
     height: 12px;
     position: absolute;
@@ -212,26 +219,32 @@ img[src="./media/2.png"] {
     left: 15px;
     cursor: pointer;
 }
-.green-dot-container, .img-pack, .img-pack-2{
+
+.green-dot-container,
+.img-pack,
+.img-pack-2 {
     z-index: 400000000000;
 
 }
-.frame > p{
+
+.frame>p {
     position: absolute;
     /* bottom: 2px; */
     bottom: 1%;
     color: #e2e2e2;
     z-index: 10000;
-    
+
 
 }
-.img-pack-2{
+
+.img-pack-2 {
     /* height: 20px; */
     position: absolute;
     bottom: 0.5%;
     right: 7px;
 }
-.img-pack-2 > a > img{
+
+.img-pack-2>a>img {
     height: 20px;
     margin: 0px 7px;
     border-radius: 3px;
@@ -239,28 +252,32 @@ img[src="./media/2.png"] {
     cursor: pointer;
 
 }
-.img-pack-2 > a > img:hover{
+
+.img-pack-2>a>img:hover {
     filter: brightness(1);
 
 }
-.packet-3{
+
+.packet-3 {
     position: absolute;
     right: 10px;
     top: 10px;
     display: flex;
     flex-direction: row-reverse;
 }
-.packet-3 > i{
+
+.packet-3>i {
     margin: 0px 4px;
     font-size: 20px;
     /* border: solid 2px black; */
     filter: brightness(0.7);
 
 }
-.packet-3 > i:hover{
+
+.packet-3>i:hover {
 
     filter: brightness(1);
-cursor: pointer;
+    cursor: pointer;
 }
 
 
@@ -270,7 +287,8 @@ cursor: pointer;
     width: 100%;
     top: 50%;
     transform: translateY(-50%);
-    overflow: hidden; /* Hide overflow */
+    overflow: hidden;
+    /* Hide overflow */
 }
 
 .inner-wrapper {
@@ -294,6 +312,7 @@ cursor: pointer;
     0% {
         transform: translateX(0%);
     }
+
     100% {
         transform: translateX(-50%);
     }
@@ -302,41 +321,46 @@ cursor: pointer;
 
 /* REAL WEBSITE CODE  */
 
-.main{
+.main {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-h2{
+
+h2 {
     font-size: 70px;
     text-align: center;
     font-weight: 300;
     z-index: 10000;
 }
-h2 > span{
+
+h2>span {
     color: #09BB00;
     font-weight: 400;
 }
-.main > p{
+
+.main>p {
     text-align: center;
-    color: gray;   
+    color: gray;
     z-index: 10000;
 
 }
-.main-p-2{
+
+.main-p-2 {
     font-family: "Chakra Petch", sans-serif;
     font-size: 20px;
     margin-top: 20px;
 }
-.main-p-1{
+
+.main-p-1 {
     position: relative;
     right: 7px;
     margin-bottom: 10px;
 }
 
-.projects{
+.projects {
     /* height: 100vh; */
     z-index: 10000000;
     display: flex;
@@ -346,101 +370,119 @@ h2 > span{
     flex-direction: column;
 }
 
-.heading{
+.heading {
     z-index: 20000;
     display: inline-block;
 }
-.green{
+
+.green {
     color: #09BB00;
 }
 
 @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-@keyframes un-typing {
-    from { width: 100% }
-    to { width: 0 }
-  }
-
-  h4{
-        overflow: hidden;
-        border-right: .15em solid rgb(27, 160, 0);
-        white-space: nowrap;
-        font-size: 1.6rem;
-        width: 0;
-        font-size: 80px;
-        font-weight: 300; 
-    margin-bottom: 100px;
-        
+    from {
+        width: 0
     }
 
-h4.jam{
+    to {
+        width: 100%
+    }
+}
+
+@keyframes un-typing {
+    from {
+        width: 100%
+    }
+
+    to {
+        width: 0
+    }
+}
+
+h4 {
+    overflow: hidden;
+    border-right: .15em solid rgb(27, 160, 0);
+    white-space: nowrap;
+    font-size: 1.6rem;
+    width: 0;
+    font-size: 80px;
+    font-weight: 300;
+    margin-bottom: 100px;
+
+}
+
+h4.jam {
     animation: un-typing 1s forwards;
 
 }
-        
-h4.jam-active{
-    animation: typing 1s forwards;
-    /* transform: scale(2); */
+
+h4.jam-active {
+    animation: typing 1s forwards ease-out;
 }
 
-.project-files{
+.project-files {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.proj{
+
+.proj {
     margin: 20px 0px;
-    width: 100% ;
+    width: 100%;
     max-width: 950px;
     height: 200px;
     border: solid 2px white;
     display: flex;
     justify-content: space-between;
     cursor: pointer;
-    
+
 }
-.year{
+
+.year {
     font-family: "Chakra Petch", sans-serif;
     margin: 12px 12px;
     font-size: 26px;
     font-weight: 500;
 }
-.num{
+
+.num {
     margin: 10px 10px 10px 10px;
     font-size: 30px;
     font-weight: 700;
     color: #9c9c9c;
     font-family: "Chakra Petch", sans-serif;
 }
-.left-proj{
+
+.left-proj {
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
 }
-h5{
+
+h5 {
     font-size: 34px;
     margin-left: 30px;
     align-self: center;
     font-weight: 400;
     transition: 100ms ease-in;
 }
-.proj > .proj-right> a > img{
+
+.proj>.proj-right>a>img {
     height: 197px;
 }
-.proj-right{
+
+.proj-right {
     display: flex;
     /* align-self: flex-end; */
     /* justify-self: flex-end; */
 }
 
-.proj{
+.proj {
     transform: translateX(-150px);
     opacity: 0;
     transition: all 1s ease;
-/* From https://css.glass */
+    /* From https://css.glass */
     background: rgba(255, 255, 255, 0.06);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -449,11 +491,12 @@ h5{
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.proj.jam-active{
+.proj.jam-active {
     transform: translateX(0px);
     opacity: 1;
 }
-.btn-1{
+
+.btn-1 {
     background-color: transparent;
     margin-top: 50px;
     padding: 12px 26px;
@@ -466,28 +509,31 @@ h5{
     font-weight: 500;
 
 }
-.btn-1:hover{
+
+.btn-1:hover {
     border-color: black;
     color: black;
     background-color: #09BB00;
 }
 
-.proj-2, .proj-4{
+.proj-2,
+.proj-4 {
     transform: translateX(-150px);
     opacity: 0;
     transition: all 1s ease;
 }
 
-.proj-2.jam-active{
-    transform: translateX(0px);
-    opacity: 1;
-}
-.proj-4.jam-active{
+.proj-2.jam-active {
     transform: translateX(0px);
     opacity: 1;
 }
 
-.proj-right>a>img{
+.proj-4.jam-active {
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+.proj-right>a>img {
     transform: scale(0.5);
     /* transform: rotate(0deg); */
     transition: 200ms ease-in;
@@ -495,38 +541,206 @@ h5{
     right: 20px;
     bottom: 30px; */
 }
-.proj-right>a>img.jam-active{
+
+.proj-right>a>img.jam-active {
     transform: scale(0.9);
     border: solid 2px #9c9c9c;
     border-radius: 5px;
     /* transform: rotate(10deg); */
 }
+
 .proj:hover .proj-right img {
-    transform: scale(0.96); 
+    transform: scale(0.96);
 }
 
 
 
 /* Typing effect */
 h5 {
-    overflow: hidden; /* Ensures the content is hidden outside the width of the container */
-    border-right: 0.15em solid; /* The cursor */
-    white-space: nowrap; /* Prevents text from wrapping to the next line */
+    overflow: hidden;
+    /* Ensures the content is hidden outside the width of the container */
+    border-right: 0.15em solid;
+    /* The cursor */
+    white-space: nowrap;
+    /* Prevents text from wrapping to the next line */
     visibility: hidden;
 }
-h5.jam-active{
+
+h5.jam-active {
     visibility: visible;
     animation: typing 2s steps(30, end), blink-caret 0.75s step-end infinite;
 
 }
+
 /* Keyframes for typing */
 @keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
 }
 
 /* Keyframes for blinking cursor */
 @keyframes blink-caret {
-    from, to { border-color: transparent; }
-    50% { border-color: black; }
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: black;
+    }
+}
+
+
+/* #container {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+
+#draggable {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #f00;
+    cursor: grab;
+} */
+
+
+.about {
+    margin-top: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading-about>h4 {
+    margin-bottom: 80px;
+}
+
+.about-container {
+    height: 90vh;
+    width: 70vw;
+}
+
+.about-box {
+    font-family: "Chakra Petch", sans-serif;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(13.8px);
+    -webkit-backdrop-filter: blur(13.8px);
+    border: 1px solid rgba(0, 0, 0, 0.29);
+    height: 200px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    border: solid #9c9c9c 2px;
+
+}
+
+.small-about-heading {
+    display: flex;
+    justify-content: space-between;
+    border: solid #9c9c9c 2px;
+    border-radius: 12px;
+    border-top: 1px;
+    border-left: 1px;
+    border-right: 1px;
+
+
+}
+
+.packet-4 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.packet-4>i {
+    margin: 0px 4px;
+    font-size: 20px;
+    /* border: solid 2px black; */
+    filter: brightness(0.7);
+
+}
+
+.packet-4>i:hover {
+
+    filter: brightness(1);
+    cursor: pointer;
+}
+
+h7 {
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 20px;
+    padding: 5px 17px;
+    width: auto;
+}
+
+
+.small-about-content > p{
+    padding-left: 10px;
+}
+.small-about-content{
+    padding: 20px 10px;
+    padding-top: 8px;
+
+}
+.about-box-1 {
+    max-width: 800px;
+    height: auto;
+    position: relative;
+    left: 130px;
+}
+.about-box-2 {
+    width: 520px;
+    height: 130px;
+    position: relative;
+    top: 100px;
+}
+.about-box-3 {
+    overflow: hidden;
+    width: 400px;
+    height: 360px;
+    position: relative;
+    left: 800px;
+    bottom: 200px;
+}
+
+.small-about-content>img {
+    height: 30%;
+}
+
+
+.about-box-4 {
+    width: 250px;
+    height: 180px;
+    position: relative;
+    bottom: 270px;
+    left: 500px;
+    z-index: 1;
+}
+.about-box-5 {
+    width: 310px;
+    height: 180px;
+    position: relative;
+    bottom: 370px;
+    left: 300px;
+}   
+.small-about-content > p{
+    font-family: "Chakra Petch", sans-serif;
+
 }
