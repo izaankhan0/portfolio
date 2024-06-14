@@ -29,7 +29,7 @@ function reveal() {
     for (let i = 0; i < reveals.length; i++) {
         const winHeight = window.innerHeight;
         const revealtop = reveals[i].getBoundingClientRect().top;
-        const revealPoint = 120;
+        const revealPoint = 100;
 
         if (revealtop < winHeight - revealPoint) {
             reveals[i].classList.add('jam-active');
