@@ -644,6 +644,7 @@ h5.jam-active {
     display: flex;
     flex-direction: column;
     border: solid #9c9c9c 2px;
+    display: none;
 
 }
 
@@ -733,7 +734,7 @@ h7 {
     width: 250px;
     height: 180px;
     /* position: relative; */
-    bottom: 270px;
+    bottom: 400px;
     left: 500px;
     z-index: 1000;
     bottom: -40px;
@@ -769,9 +770,7 @@ h7 {
 }
 
 .small-about-content>img:hover{
-    transform: translateY(-30px);
-    transform: translateX(-30px);
-    /* transform: translateY(40px); */
+    transform: scale(1.05) translateY(-35px);
 
 }
 
@@ -782,7 +781,7 @@ h7 {
 }
 
 .img-portrait.jam-active{
-    transform: translateY(-40px);
+    transform: translateY(-35px);
 
 }
 
@@ -817,4 +816,84 @@ h7 {
     color: purple;
     display: inline-block;
     font-weight: 500;
+}
+
+
+.reviews{
+    position: relative;
+    top: 460px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 91vw;
+}
+.reviews > h6{
+    all: unset;
+    font-size: 70px;
+    width: 70%;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 50px;
+    /* display: flex; */
+    /* justify-content: center; */
+}
+.carousel-container {
+    position: relative;
+    width: 900px;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    height: 500px;
+    font-family: "Chakra Petch", sans-serif;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.29);
+    display: flex;
+    flex-direction: column;
+    border: solid #9c9c9c 2px;
+/* From https://css.glass */
+background: rgba(0, 0, 0, 0.73);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(16.2px);
+-webkit-backdrop-filter: blur(16.2px);
+}
+
+.carousel-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 0.5em;
+    
+}
+.review-buttons{
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-300px);
+}
+
+.carousel-button.prev {
+    transform: translateX(-500px);
+}
+
+.carousel-button.next {
+    transform: translateX(500px);
+}
+
+@media (max-width: 700px) {
+    .carousel-item {
+        font-size: 1.5em;
+    }
 }
