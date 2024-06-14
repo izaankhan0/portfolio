@@ -22,6 +22,15 @@
         left: 20px;
     }
 }
+
+
+@media (max-width: 700px) {
+    .carousel-item {
+        font-size: 1.5em;
+    }
+}
+
+
 @media (max-width: 620px) {
     .inner-wrapper p {
         /* width: 16.66%; */

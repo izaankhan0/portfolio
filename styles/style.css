@@ -693,26 +693,29 @@ h7 {
 }
 
 
-.small-about-content{
+.small-about-content {
     padding: 20px 10px;
     padding-top: 8px;
     font-size: 19px;
-    
+
 
 }
+
 .about-box-1 {
     width: 800px;
     height: auto;
     /* position: relative; */
     left: 130px;
 }
+
 .about-box-2 {
     width: 520px;
     height: 130px;
     bottom: 100px;
     left: -70px;
- 
+
 }
+
 .about-box-3 {
     overflow: hidden;
     width: 400px;
@@ -740,6 +743,7 @@ h7 {
     bottom: -40px;
 
 }
+
 .about-box-5 {
     width: 310px;
     height: 180px;
@@ -748,78 +752,86 @@ h7 {
     left: 100px;
     bottom: -100px;
 
-}   
-.small-about-content > p{
+}
+
+.small-about-content>p {
     font-family: "Chakra Petch", sans-serif;
     padding-left: 10px;
-    }
-    
-    .small-about-content>a>p{
+}
+
+.small-about-content>a>p {
     font-family: "Chakra Petch", sans-serif;
     padding-left: 10px;
     text-decoration: none;
     transition: 300ms ease;
 
 }
-    .small-about-content>a{
+
+.small-about-content>a {
     text-decoration: none;
 
 }
-.small-about-content>a>p:hover{
+
+.small-about-content>a>p:hover {
     color: #0cf500;
 }
 
-.small-about-content>img:hover{
+.small-about-content>img:hover {
     transform: scale(1.05) translateY(-35px);
 
 }
 
-.portrait{
+.portrait {
     background-image: url(../media/bg.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
 
-.img-portrait.jam-active{
+.img-portrait.jam-active {
     transform: translateY(-35px);
 
 }
 
-.green{
+.green {
     color: #0cf500;
     display: inline-block;
     font-weight: 500;
 }
-.blue{
+
+.blue {
     color: blue;
     display: inline-block;
     font-weight: 500;
 }
-.red{
+
+.red {
     color: rgb(206, 0, 0);
     display: inline-block;
     font-weight: 500 !important;
-    
+
 }
-.orange{
+
+.orange {
     color: rgb(230, 88, 0);
     display: inline-block;
     font-weight: 500;
-    
+
 }
-.aqua{
+
+.aqua {
     color: rgb(0, 226, 226);
     display: inline-block;
     font-weight: 500;
 }
-.purple{
+
+.purple {
     color: purple;
     display: inline-block;
     font-weight: 500;
 }
 
 
-.reviews{
+.reviews {
     position: relative;
     top: 460px;
     display: flex;
@@ -828,16 +840,37 @@ h7 {
     align-items: center;
     width: 91vw;
 }
-.reviews > h6{
+
+.reviews>h6 {
     all: unset;
     font-size: 70px;
-    width: 70%;
+    /* width: 70%; */
     font-weight: 500;
     text-align: center;
     margin-bottom: 50px;
     /* display: flex; */
     /* justify-content: center; */
+
+    overflow: hidden;
+    border-right: .15em solid rgb(27, 160, 0);
+    white-space: nowrap;
+    font-size: 1.6rem;
+    width: 0;
+    font-size: 80px;
+    font-weight: 300;
+    margin-bottom: 100px;
+
 }
+
+.reviews>h6.jam {
+    animation: un-typing 1s forwards;
+
+}
+
+.reviews>h6.jam-active {
+    animation: typing 1s forwards ease-out;
+}
+
 .carousel-container {
     position: relative;
     width: 900px;
@@ -861,12 +894,12 @@ h7 {
     display: flex;
     flex-direction: column;
     border: solid #9c9c9c 2px;
-/* From https://css.glass */
-background: rgba(0, 0, 0, 0.73);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(16.2px);
--webkit-backdrop-filter: blur(16.2px);
+    /* From https://css.glass */
+    background: rgba(0, 0, 0, 0.73);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(16.2px);
+    -webkit-backdrop-filter: blur(16.2px);
 }
 
 .carousel-button {
@@ -876,9 +909,10 @@ backdrop-filter: blur(16.2px);
     font-size: 1.5em;
     cursor: pointer;
     padding: 0.5em;
-    
+
 }
-.review-buttons{
+
+.review-buttons {
     display: flex;
     justify-content: space-between;
     transform: translateY(-300px);
@@ -892,8 +926,99 @@ backdrop-filter: blur(16.2px);
     transform: translateX(500px);
 }
 
-@media (max-width: 700px) {
-    .carousel-item {
-        font-size: 1.5em;
-    }
+.contact-container {
+    position: relative;
+    top: 90vh;
+    width: 80%;
+    margin-left: 10%;
+    /* justify-self: center; */
+    /* background-color: #09BB00; */
+    /* padding: 20px 30px; */
+}
+
+.contact>.small-about-heading {
+
+    border: solid 2px #9c9c9ca4;
+    border-bottom: 0px;
+    border-radius: 0;
+}
+
+.small-about-heading>h7 {
+    padding: 5px 20px;
+}
+
+.small-about-content {
+    height: 300px;
+}
+
+.contact>.small-about-content {
+
+    border: solid 2px #9c9c9ca4;
+}
+
+.contact {
+    /* From https://css.glass */
+    background: rgba(0, 0, 0, 0.73);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.7px);
+    -webkit-backdrop-filter: blur(2.7px);
+}
+
+.left-contact>img {
+    height: 100%;
+
+    transform: translateX(50px);
+    /* background-color: #0cf500; */
+}
+
+.left-contact {
+    border-radius: 50%;
+    background-image: url(../media/bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+    width: 350px;
+    margin-right: 30px;
+}
+
+.contact>.small-about-content {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+h9 {
+    font-size: 60px;
+}
+
+.right-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* justify-content: center; */
+}
+
+.right-contact>button {
+    background-color: transparent;
+    margin-top: 18px;
+    padding: 12px 26px;
+    font-size: 22px;
+    border-radius: 14px;
+    border: solid white 2px;
+    cursor: pointer;
+    transition: 100ms ease-in;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 500;
+}
+.right-contact>button:hover{
+    border-color: black;
+    color: black;
+    background-color: #09BB00;
+}
+.lc-img{
+    transition: 2s ease;
+}
+.lc-img.jam-active{
+    transform: translateX(50px) scale(1.1);
 }
