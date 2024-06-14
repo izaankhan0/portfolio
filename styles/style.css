@@ -9,7 +9,9 @@
     color: aliceblue;
 
 }
-
+html {
+    scroll-behavior: smooth;
+}
 .container {
     width: 100%;
 
@@ -903,27 +905,31 @@ h7 {
 }
 
 .carousel-button {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: transparent;
     border: none;
     color: white;
-    font-size: 1.5em;
+    font-size: 100px;
     cursor: pointer;
     padding: 0.5em;
+    transition: 200ms ease;
 
+}
+.carousel-button:hover{
+    color: #09BB00;
 }
 
 .review-buttons {
     display: flex;
     justify-content: space-between;
-    transform: translateY(-300px);
+    transform: translateY(-400px);
 }
 
 .carousel-button.prev {
-    transform: translateX(-500px);
+    transform: translateX(-430px);
 }
 
 .carousel-button.next {
-    transform: translateX(500px);
+    transform: translateX(450px);
 }
 
 .contact-container {
@@ -963,13 +969,6 @@ h7 {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(2.7px);
     -webkit-backdrop-filter: blur(2.7px);
-}
-
-.lc-img {
-    height: 100%;
-
-    transform: translateX(50px);
-    /* background-color: #0cf500; */
 }
 
 .left-contact {
@@ -1017,8 +1016,32 @@ h9 {
     background-color: #09BB00;
 }
 .lc-img{
+    height: 250px;
+    transform: translateX(50px) translateY(60px) scale(0.9);
     transition: 2s ease;
 }
 .lc-img.jam-active{
-    transform: translateX(50px) scale(1.1);
+    transform: translateX(50px) translateY(4px) scale(1.1);
+}
+.about-btn{
+    background-color: transparent;
+    margin-top: 18px;
+    padding: 12px 26px;
+    font-size: 22px;
+    border-radius: 14px;
+    border: solid white 2px;
+    cursor: pointer;
+    transition: 100ms ease-in;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 500;
+    position: relative;
+    top: 200px;
+    left: 45%;
+    z-index: 9;
+    /* transform: translateY(200px); */
+}
+.about-btn:hover{
+    border-color: black;
+    color: black;
+    background-color: #09BB00;
 }
