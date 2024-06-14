@@ -89,8 +89,8 @@ document.querySelectorAll('.about-box').forEach(box => {
 
         let shiftX = e.clientX - box.getBoundingClientRect().left;
         let shiftY = e.clientY - box.getBoundingClientRect().top;
-        // shiftX = shiftX + 242
-        // shiftY = shiftY + 28
+        shiftX = shiftX + 20
+        shiftY = shiftY + 27.8
         function moveAt(pageX, pageY) {
             box.style.left = pageX - shiftX + 'px';
             box.style.top = pageY - shiftY + 'px';

@@ -713,7 +713,7 @@ h7 {
 .about-box-2 {
     width: 520px;
     height: 130px;
-    bottom: 1400px;
+    bottom: 1680px;
     /* left: -200px; */
 
 }
@@ -724,7 +724,7 @@ h7 {
     height: 340px;
     /* position: relative; */
     left: 900px;
-    bottom: 1200px;
+    bottom: 1450px;
 }
 
 .small-about-content>img {
@@ -739,7 +739,7 @@ h7 {
     width: 250px;
     height: 180px;
     /* position: relative; */
-    bottom: 1200px;
+    bottom: 1450px;
     left: 400px;
     /* z-index: 1000; */
 
@@ -749,7 +749,7 @@ h7 {
     width: 310px;
     height: 180px;
     /* position: relative; */
-    bottom: 1140px;
+    bottom: 1400px;
     left: 570px;
 
 }
@@ -934,7 +934,7 @@ h7 {
 
 .contact-container {
     position: relative;
-    top: 90vh;
+    top: 70vh;
     width: 80%;
     margin-left: 10%;
     /* justify-self: center; */
@@ -1035,7 +1035,7 @@ h9 {
     font-family: "Chakra Petch", sans-serif;
     font-weight: 500;
     position: relative;
-    top: 200px;
+    top: 140px;
     left: 45%;
     z-index: 9;
     /* transform: translateY(200px); */
