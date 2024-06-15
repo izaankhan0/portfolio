@@ -104,7 +104,10 @@ IT IS ON THE WIDTH OF 1350px
     h9{
         font-size: 40px;
     }
-    
+    .projects{
+        position: relative;
+        left: 20px;
+    }
 }
 @media (max-width: 1300px) {
     .inner-wrapper p {
@@ -152,6 +155,25 @@ IT IS ON THE WIDTH OF 1350px
 }
 
 @media (max-width: 1025px) {
+    .proj-3>.proj-right>a>img.jam{
+        transform: 
+        scale(1.2)
+        rotate(10deg)
+        translateY(-30px)
+        translateX(-60px)
+        ;
+    }
+    .proj-3>.proj-right>.year{
+        margin-right: 30px;
+    }
+    .proj-3>.proj-right>a>img.jam-active{
+        transform: 
+        scale(1.2)
+        rotate(10deg)
+        translateY(-30px)
+        translateX(-100px)
+        ;
+    }
     .reviews > h6{
         font-size: 55px;
         max-width: 650px;
@@ -165,9 +187,78 @@ IT IS ON THE WIDTH OF 1350px
         left: 14px;
 
     }
+    .proj-right{
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .proj-right > p{
+        color: #9c9c9c;
+
+    }
+    .proj{
+        height: auto;
+        padding-bottom: 40px;
+        padding-right: 30px;
+        max-width: 800px;
+        
+    }
+    .left-proj{
+        justify-content: flex-end;
+        padding-left: 16px;
+    }
+    .proj>.proj-right>a>img.jam{
+        /* all: unset; */
+        /* transform: scale(1.2); */
+        transition: 1s ease;
+    }
+    .proj>.proj-right>a>img.jam-active{
+        /* all: unset; */
+        transform: 
+        scale(1.2)
+        rotate(10deg)
+        translateY(-30px)
+        ;
+        
+    }
 }
+@media (max-width: 930px) {
+    .proj-right.jam{
+    }
+    .proj-right.jam-active{
+        
+        transform: translateY(150px);
+    }
+    .proj-3>.proj-right>a>img.jam{
+        transform: 
+        scale(1)
+        rotate(0deg)
+        translateY(0px)
+        translateX(0px)
+        ;
+    }
+    .proj>.proj-right>a>img.jam-active{
+        /* all: unset; */
+        transform: 
+        scale(1.2)
+        rotate(10deg)
+        translateY(-30px)
+        translateX(-60px)
+        ;  
+    }
+    .proj{
+        margin-bottom: 70px;
+        height: 300px;
+    }
+    .left-proj{
+        /* justify-content: flex-start;
 
-
+        align-items: flex-start; */
+        /* width: auto; */
+        width: 370px;
+    }
+}   
+    
+    
 @media (max-width: 960px) {
     .inner-wrapper p {
         /* width: 25%; */
@@ -205,6 +296,21 @@ IT IS ON THE WIDTH OF 1350px
         font-size: 30px;
     }
 
+}
+@media (max-width:900px) {
+    .proj{
+        flex-direction: column-reverse;
+    }
+    .projects > .heading > h4{
+        font-size: 60px;
+        margin-bottom: 150px;
+        /* text-align: start; */
+        justify-content: flex-start;
+    }
+    .left-proj{
+        justify-content: flex-start;
+        align-items: flex-start !important;
+    }
 }
 @media (max-width:810px) {
     h2{
