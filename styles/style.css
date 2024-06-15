@@ -934,6 +934,7 @@ h7 {
     cursor: pointer;
     padding: 0.5em;
     transition: 200ms ease;
+    /* background-color: #09BB00 ; */
 
 }
 .carousel-button:hover{
@@ -1042,7 +1043,7 @@ h9 {
 .lc-img{
     height: 270px;
     width: 270px;
-    transform: translateX(50px) translateY(60px) scale(02);
+    transform: translateX(50px) translateY(60px) scale(1.6);
     transition: 2s ease;
 }
 .lc-img.jam-active{
@@ -1071,4 +1072,11 @@ h9 {
     background-color: #09BB00;
 }
 
+/* 
+[data-scroll-container] {
+    overflow: hidden;
+}
 
+[data-scroll-section] {
+    overflow: hidden;
+} */

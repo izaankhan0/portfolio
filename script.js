@@ -159,3 +159,12 @@ document.querySelectorAll('.scroll-link').forEach(item => {
         });
     });
 });
+
+
+
+// const scroll = new LocomotiveScroll({
+//     el: document.querySelector('[data-scroll-container]'),
+//     smooth: true,
+//     smoothMobile: true,
+//     lerp: 0.07 // Adjust the lerp value for scroll speed (default is 0.1)
+// });
