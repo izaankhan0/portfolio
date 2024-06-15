@@ -12,8 +12,15 @@
 html {
     scroll-behavior: smooth;
 }
-.container {
+.con{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* overflow: hidden; */
+}
+.container {
+    width: 90%;
 
     position: relative;
     bottom: 720px;
@@ -727,7 +734,7 @@ h7 {
 .about-box-2 {
     width: 520px;
     height: 130px;
-    bottom: 1680px;
+    bottom: 1580px;
     /* left: -200px; */
 
 }
@@ -738,7 +745,7 @@ h7 {
     height: 340px;
     /* position: relative; */
     left: 900px;
-    bottom: 1450px;
+    bottom: 1350px;
 }
 
 .small-about-content>img {
@@ -753,7 +760,7 @@ h7 {
     width: 250px;
     height: 180px;
     /* position: relative; */
-    bottom: 1450px;
+    bottom: 1350px;
     left: 400px;
     /* z-index: 1000; */
 
@@ -763,7 +770,7 @@ h7 {
     width: 310px;
     height: 180px;
     /* position: relative; */
-    bottom: 1400px;
+    bottom: 1300px;
     left: 570px;
 
 }
@@ -854,7 +861,7 @@ h7 {
     /* justify-content: center; */
     align-items: center;
     width: 91vw;
-    left: 70px;
+    /* left: 70px; */
 }
 
 .reviews>h6 {
@@ -871,7 +878,8 @@ h7 {
     border-right: .15em solid rgb(27, 160, 0);
     white-space: nowrap;
     font-size: 1.6rem;
-    width: 0;
+    /* width: 100%; */
+    max-width: 1000px;
     font-size: 80px;
     font-weight: 300;
     margin-bottom: 100px;
@@ -991,7 +999,9 @@ h7 {
     background-repeat: no-repeat;
     background-size: contain;
     overflow: hidden;
-    width: 350px;
+    min-width: 270px;
+    
+    /* height: 350px; */
     margin-right: 30px;
 }
 
@@ -1030,12 +1040,13 @@ h9 {
     background-color: #09BB00;
 }
 .lc-img{
-    height: 250px;
-    transform: translateX(50px) translateY(60px) scale(0.9);
+    height: 270px;
+    width: 270px;
+    transform: translateX(50px) translateY(60px) scale(02);
     transition: 2s ease;
 }
 .lc-img.jam-active{
-    transform: translateX(50px) translateY(4px) scale(1.1);
+    transform: translateX(50px) translateY(4px) scale(1);
 }
 .about-btn{
     background-color: transparent;
@@ -1059,3 +1070,5 @@ h9 {
     color: black;
     background-color: #09BB00;
 }
+
+

@@ -144,3 +144,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
     updateCarousel();
 });
+
+
+// script.js
+document.querySelectorAll('.scroll-link').forEach(item => {
+    item.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('data-target');
+        const targetElement = document.querySelector(targetId);
+
+        window.scrollTo({
+            top: targetElement.offsetTop,
+            behavior: 'smooth'
+        });
+    });
+});
