@@ -1072,11 +1072,9 @@ h9 {
     background-color: #09BB00;
 }
 
-/* 
-[data-scroll-container] {
-    overflow: hidden;
-}
-
-[data-scroll-section] {
-    overflow: hidden;
+/* footer{
+    position: relative;
+    top: 629px;
+    width: 100%;
+    background-color: #9c9c9c;
 } */

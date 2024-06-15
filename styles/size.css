@@ -94,6 +94,16 @@ IT IS ON THE WIDTH OF 1350px
         transform: none;
         margin-left: 50px;
     }
+    .lc-img{
+        
+    }
+
+    .right-contact{
+        justify-content: center;
+    }
+    h9{
+        font-size: 40px;
+    }
     
 }
 @media (max-width: 1300px) {
@@ -141,6 +151,23 @@ IT IS ON THE WIDTH OF 1350px
     }
 }
 
+@media (max-width: 1025px) {
+    .reviews > h6{
+        font-size: 55px;
+        max-width: 650px;
+        margin-bottom: 70px;
+    }
+    .carousel-container{
+        width: 650px;
+    }
+    .reviews{
+        position: relative;
+        left: 14px;
+
+    }
+}
+
+
 @media (max-width: 960px) {
     .inner-wrapper p {
         /* width: 25%; */
@@ -150,6 +177,34 @@ IT IS ON THE WIDTH OF 1350px
         font-size: 50px;
         margin-bottom: 20px;
     }
+    .left-contact{
+
+        height: 200px;
+        min-width: 200px !important;
+    }
+    .lc-img{
+        height: 200px;
+        width: 200px;
+
+    }
+    .contact > .small-about-content{
+        /* justify-content: center; */
+        align-items: center;
+    }
+    .contact-container{
+        position: relative;
+        left: 20px;
+    }
+    .right-contact{
+        justify-content: center;
+    }
+    .right-contact > button{
+        font-size: 16px;
+    }
+    h9{
+        font-size: 30px;
+    }
+
 }
 @media (max-width:810px) {
     h2{
@@ -172,9 +227,27 @@ IT IS ON THE WIDTH OF 1350px
         font-size: 45px;
         /* margin-bottom: 20px; */
     }
-    .heading-about{
-        /* width: 300px; */
-
+    .reviews > h6{
+        font-size: 40px;
+        max-width: 520px;
+    }
+    .carousel-item > .small-about-content{
+        flex-direction: column;
+        position: relative;
+        top: 30px;
+    }
+    .carousel-item > .small-about-content > img{
+        margin-top: 30px !important;
+        margin-bottom: 20px !important;
+    }
+    .carousel-item{
+        height: 500px;
+    }
+    .carousel-container{
+        width: 550px;
+    }
+    .carousel > .small-about-content > p{
+        text-align: center;
     }
 }
 @media (max-width: 700px) {
