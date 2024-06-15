@@ -84,14 +84,66 @@
     .container{
         bottom: 680px;
     }
+    
+
+.about-box-2 {
+    bottom: 1500px;
+}
+.about-box-3 {
+    bottom: 1300px;
+}
+.about-box-4 {
+    bottom: 1300px;
+}
+.about-box-5 {
+    bottom: 1250px;
+}
+
 }
 @media (max-height:660px) {
     .container{
         bottom: 620px;
     }
 }
+@media (max-height:620px) {
+    .about-box-2 {
+        bottom: 1450px;
+    }
+    .about-box-3 {
+        bottom: 1250px;
+    }
+    .about-box-4 {
+        bottom: 1250px;
+    }
+    .about-box-5 {
+        bottom: 1200px;
+    }
+}
 @media (max-height:600px) {
     .container{
         bottom: 590px;
+    }
+}
+
+@media (max-height:560px) {
+    .about-box-2 {
+        bottom: 1350px;
+    }
+    .about-box-3 {
+        bottom: 1150px;
+    }
+    .about-box-4 {
+        bottom: 1150px;
+    }
+    .about-box-5 {
+        bottom: 1100px;
+    }
+    .container{
+        bottom: 500px;
+    }
+}
+@media (max-height:470px) {
+    .container{
+        bottom: 470px;
     }
 }
