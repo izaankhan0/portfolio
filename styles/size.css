@@ -563,9 +563,42 @@ IT IS ON THE WIDTH OF 1350px
     .carousel-item > .small-about-content{
         top: 50px;
     }
+    .right-contact > button{
+        position: relative;
+        right: 10px;
+        padding: 12px 20px;
+        font-size: 14px;
+
+    }
+    
 }
 
 
+@media (max-width: 480px) {
+    .contact > .small-about-content{
+        /* display: flex; */
+        flex-direction: column;
+        /* justify-content: center; */
+        /* align-items: center; */
+        height: 376px;
+
+    }
+    .right-contact{
+        justify-content: center;
+        align-items: center;
+    }
+    h9{
+        text-align:center ;
+    }
+    .left-contact{
+        height: 300px;
+        margin-right: 6px;
+    }
+    .right-contact > button{
+        right: 0px;
+        font-size: 18px;
+    }
+}
 
 @media (max-width: 470px) {
     .inner-wrapper p {
@@ -577,6 +610,22 @@ IT IS ON THE WIDTH OF 1350px
     .inner-wrapper p {
         /* width: 16.66%; */
         font-size: 60px;
+    }
+    h9{
+        font-size: 26px;
+
+    }
+    
+}
+@media (max-width: 315px) {
+    h9{
+        font-size: 23px;
+
+    }
+    .contact > .small-about-content{
+        /* display: flex; */
+        height: 360px;
+
     }
 }
 
