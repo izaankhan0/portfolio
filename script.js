@@ -168,3 +168,35 @@ document.querySelectorAll('.scroll-link').forEach(item => {
 //     smoothMobile: true,
 //     lerp: 0.07 // Adjust the lerp value for scroll speed (default is 0.1)
 // });
+
+
+const text = document.querySelector('.sec-text');
+
+const textLoad = () => {
+    setTimeout(() => {
+        text.classList.remove('typing');
+        text.classList.add('untyping');
+    }, 6000);
+
+    setTimeout(() => {
+        text.classList.remove('untyping');
+        text.innerHTML = '<span>Graphic</span> Designer';
+        void text.offsetWidth;  // Trigger reflow to restart CSS animation
+        text.classList.add('typing');
+    }, 10000);
+    
+    setTimeout(() => {
+        text.classList.remove('typing');
+        text.classList.add('untyping');
+    }, 18000);
+
+    setTimeout(() => {
+        text.classList.remove('untyping');
+        text.innerHTML = '<span>website</span> developer';
+        void text.offsetWidth;  // Trigger reflow to restart CSS animation
+        text.classList.add('typing');
+    }, 22000);
+}
+
+textLoad();
+setInterval(textLoad, 24000);  // Adjusted interval for complete cycle
