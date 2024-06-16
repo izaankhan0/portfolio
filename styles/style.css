@@ -404,10 +404,13 @@ h2>span {
         width: 0
     }
 }
+.heading > h4{
+    border-right: .15em solid rgb(29, 215, 0);
 
+}
 h4 {
     overflow: hidden;
-    border-right: .15em solid rgb(27, 160, 0);
+    border-right: .15em solid rgb(215, 0, 0);
     white-space: nowrap;
     font-size: 1.6rem;
     width: 0;
@@ -565,7 +568,7 @@ h5 {
 h5 {
     overflow: hidden;
     /* Ensures the content is hidden outside the width of the container */
-    border-right: 0.15em solid;
+    border-right: 0.15em solid #41b100;
     /* The cursor */
     white-space: nowrap;
     /* Prevents text from wrapping to the next line */
@@ -598,7 +601,7 @@ h5.jam-active {
     }
 
     50% {
-        border-color: black;
+        border-color: rgb(41, 163, 3);
     }
 }
 

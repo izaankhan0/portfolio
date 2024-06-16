@@ -28,6 +28,9 @@ IT IS ON THE WIDTH OF 1350px
         }
 }
 @media (max-width: 1350px) {
+    .contact{
+        margin-top: 60px;
+    }
     .about-box{
         position: static !important;
 

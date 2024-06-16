@@ -18,9 +18,6 @@ function currentLightChanger() {
 
     }
 }
-
-
-
 window.addEventListener('scroll', reveal);
 
 function reveal() {
@@ -38,48 +35,6 @@ function reveal() {
         }
     }
 }
-// const container = document.getElementById('about');
-// const draggable = document.getElementById('draggable');
-
-// let offsetX = 0;
-// let offsetY = 0;
-// let isDragging = false;
-
-// draggable.addEventListener('mousedown', (e) => {
-//     e.preventDefault(); // Prevent default action to avoid unwanted behavior
-//     offsetX = e.clientX - draggable.offsetLeft;
-//     offsetY = e.clientY - draggable.offsetTop;
-//     isDragging = true;
-//     draggable.style.cursor = 'grabbing';
-// });
-
-// document.addEventListener('mousemove', (e) => {
-//     if (isDragging) {
-//         e.preventDefault(); // Prevent default action to avoid unwanted behavior
-//         let x = e.clientX - offsetX;
-//         let y = e.clientY - offsetY;
-
-//         // Keep the draggable within the container
-//         x = Math.max(0, Math.min(x, container.clientWidth - draggable.clientWidth));
-//         y = Math.max(0, Math.min(y, container.clientHeight - draggable.clientHeight));
-
-//         draggable.style.left = `${x}px`;
-//         draggable.style.top = `${y}px`;
-//     }
-// });
-
-// document.addEventListener('mouseup', (e) => {
-//     e.preventDefault(); // Prevent default action to avoid unwanted behavior
-//     isDragging = false;
-//     draggable.style.cursor = 'grab';
-// });
-
-// // Prevent unwanted refresh behavior if there's any interactive element
-// document.addEventListener('click', (e) => {
-//     if (isDragging) {
-//         e.preventDefault();
-//     }
-// });
 document.querySelectorAll('.about-box').forEach(box => {
     box.style.position = 'absolute';
     box.style.zIndex = 1000;
@@ -115,8 +70,6 @@ document.querySelectorAll('.about-box').forEach(box => {
     });
 });
 
-// script.js
-// script.js
 document.addEventListener('DOMContentLoaded', function() {
     const carousel = document.querySelector('.carousel');
     const items = document.querySelectorAll('.carousel-item');
@@ -146,7 +99,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-// script.js
 document.querySelectorAll('.scroll-link').forEach(item => {
     item.addEventListener('click', function(e) {
         e.preventDefault();
@@ -160,14 +112,6 @@ document.querySelectorAll('.scroll-link').forEach(item => {
     });
 });
 
-
-
-// const scroll = new LocomotiveScroll({
-//     el: document.querySelector('[data-scroll-container]'),
-//     smooth: true,
-//     smoothMobile: true,
-//     lerp: 0.07 // Adjust the lerp value for scroll speed (default is 0.1)
-// });
 
 
 const text = document.querySelector('.sec-text');
@@ -192,7 +136,7 @@ const textLoad = () => {
 
     setTimeout(() => {
         text.classList.remove('untyping');
-        text.innerHTML = '<span>website</span> developer';
+        text.innerHTML = '<span>Website</span> Developer';
         void text.offsetWidth;  // Trigger reflow to restart CSS animation
         text.classList.add('typing');
     }, 22000);
