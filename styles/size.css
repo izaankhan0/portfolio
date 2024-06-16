@@ -94,9 +94,6 @@ IT IS ON THE WIDTH OF 1350px
         transform: none;
         margin-left: 50px;
     }
-    .lc-img{
-        
-    }
 
     .right-contact{
         justify-content: center;
@@ -220,10 +217,11 @@ IT IS ON THE WIDTH OF 1350px
         ;
         
     }
+    .proj-4{
+        margin-bottom: 20px;
+    }
 }
-@media (max-width: 930px) {
-    
-}   
+ 
     
     
 @media (max-width: 960px) {
@@ -378,9 +376,6 @@ IT IS ON THE WIDTH OF 1350px
     .sub-frame-1{
         display: none;
     }
-    .sub-frame-2{
-        /* display: none; */
-    }
     .sub-frame-3{
         display: none;
         /* background-color: blueviolet; */
@@ -486,7 +481,6 @@ IT IS ON THE WIDTH OF 1350px
     .projects > .heading > h4{
         margin-bottom: 70px;
     }
-    .proj{}
 }
 @media (max-width: 570px) {
     h2{
@@ -532,7 +526,12 @@ IT IS ON THE WIDTH OF 1350px
         position: relative;
         bottom: 50px;
     }
-
+    .carousel-item > .small-about-content{
+        top: 60px;
+    }
+    .proj-4{
+        margin-bottom: 15px;
+    }
 }
 
 
@@ -561,7 +560,7 @@ IT IS ON THE WIDTH OF 1350px
         margin-bottom: 20px;
     }
     .carousel-item > .small-about-content{
-        top: 50px;
+        top: 90px;
     }
     .right-contact > button{
         position: relative;
@@ -576,12 +575,12 @@ IT IS ON THE WIDTH OF 1350px
 
 @media (max-width: 480px) {
     .contact > .small-about-content{
-        /* display: flex; */
         flex-direction: column;
-        /* justify-content: center; */
-        /* align-items: center; */
         height: 376px;
 
+    }
+    .carousel-item > .small-about-content{
+        top: 45px;
     }
     .right-contact{
         justify-content: center;
@@ -598,6 +597,23 @@ IT IS ON THE WIDTH OF 1350px
         right: 0px;
         font-size: 18px;
     }
+    .reviews > h6{
+        font-size: 30px;
+        max-width: 520px;
+        /* width: 380px !important; */
+    }
+    .carousel-item > .small-about-content > p{
+        font-size: 16px;
+    }
+    .about-btn{
+        margin-left: 30%;
+    }
+    .about-box{
+        margin: 20px 0px;
+    }
+    .proj-3 > .left-proj >  h5{
+        font-size: 24px;
+    }
 }
 
 @media (max-width: 470px) {
@@ -605,7 +621,67 @@ IT IS ON THE WIDTH OF 1350px
         /* width: 16.66%; */
         font-size: 70px;
     }
+    .about > .heading-about > h4{
+        font-size: 26px;
+    }
 }
+@media (max-width: 435px) {
+    .main > h2{
+        font-size: 34px;
+    }
+    .main-p-2{
+        font-size: 13px !important;
+    }
+
+    .left-proj > h5{
+        margin-left: 20px;
+        font-size: 20px !important;
+    }
+    .proj-right > a > img{
+        height: 130px !important;
+    }
+}
+@media (max-width: 400px) {
+    .proj-right > a > img{
+        height: 120px !important;
+        position: relative;
+        top: 15px;
+        left: 10px;
+    }
+}
+@media (max-width: 380px) {
+    .reviews > h6{
+        font-size: 24px;
+    }
+    .carousel-item > .small-about-content > p{
+        font-size: 14px;
+    }
+    .about-btn{
+        margin-left: 25%;
+    }
+    .inline{
+        display: flex;
+        justify-content: center;
+    }
+    .about > .heading-about > h4{
+        font-size: 32px;
+        text-align: center;
+        
+    }
+    .frame > .packet-3{
+        display: none;
+    }
+    .main > h2{
+        font-size: 30px;
+    }
+    .main-p-2{
+        font-size: 12px !important;
+    }
+    .projects > .heading > h4{
+        font-size: 30px;
+    }
+}
+
 @media (max-width: 360px) {
     .inner-wrapper p {
         /* width: 16.66%; */
@@ -615,7 +691,37 @@ IT IS ON THE WIDTH OF 1350px
         font-size: 26px;
 
     }
-    
+    .main > h2{
+        font-size: 27px;
+    }
+    .main-p-2{
+        font-size: 10px !important;
+    }
+    .left-proj > h5{
+        margin-left: 20px;
+        font-size: 17px !important;
+    }
+    .proj-right > a > img{
+        height: 110px !important;
+    }
+    .year{
+        top: -26px;
+    }
+}
+
+@media (max-width: 340px) {
+    .proj-right > a > img{
+        height: 100px !important;
+        left: 25px;
+    }
+    .left-proj > h5{
+        margin-left: 7px;
+        font-size: 16px !important;
+    }
+    .year{
+        left: 20px;
+    }
+
 }
 @media (max-width: 315px) {
     h9{
