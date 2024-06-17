@@ -318,6 +318,9 @@ IT IS ON THE WIDTH OF 1350px
         /* text-align: start; */
         justify-content: flex-start;
     }
+    .sec-text{
+        font-size: 56px;
+    }
 }
 @media (max-width:810px) {
     h2{
@@ -639,6 +642,9 @@ IT IS ON THE WIDTH OF 1350px
     .about > .heading-about > h4{
         font-size: 26px;
     }
+    .sec-text{
+        font-size: 32px;
+    }
 }
 @media (max-width: 435px) {
     .main > h2{
@@ -666,6 +672,9 @@ IT IS ON THE WIDTH OF 1350px
         position: relative;
         top: 15px;
         left: 10px;
+    }
+    .sec-text{
+        font-size: 27px;
     }
 }
 @media (max-width: 380px) {
