@@ -1066,20 +1066,3 @@ h9 {
 .untyping {
   animation: untyping 2s steps(30, end) forwards, blink 0.75s step-end infinite;
 }
-#preloader {
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #000000;
-  z-index: 99;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 99999999999999999999999999999999999999999999999;
-}
-
-#preloader img {
-  width: 50vw; /* Adjust the size of the GIF as needed */
-}
