@@ -148,8 +148,3 @@ const textLoad = () => {
 
 textLoad();
 setInterval(textLoad, 24000); // Adjusted interval for complete cycle
-
-window.addEventListener("load", function () {
-  const preloader = document.getElementById("preloader");
-  preloader.style.display = "none";
-});
