@@ -740,9 +740,24 @@ IT IS ON THE WIDTH OF 1350px
     bottom: 550px;
   }
 }
-@media (max-height: 470px) {
+@media (max-height: 510px) {
   .container {
     bottom: 470px;
+  }
+}
+@media (max-height: 440px) {
+  .container {
+    bottom: 420px;
+  }
+}
+@media (max-height: 405px) {
+  .container {
+    bottom: 330px;
+  }
+}
+@media (max-height: 340px) {
+  .container {
+    bottom: 270px;
   }
 }
 @media (min-height: 1100px) {
