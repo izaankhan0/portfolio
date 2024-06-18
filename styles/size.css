@@ -607,7 +607,6 @@ IT IS ON THE WIDTH OF 1350px
 
 @media (max-width: 360px) {
   .inner-wrapper p {
-    /* width: 16.66%; */
     font-size: 60px;
   }
   h9 {
@@ -652,7 +651,6 @@ IT IS ON THE WIDTH OF 1350px
     font-size: 23px;
   }
   .contact > .small-about-content {
-    /* display: flex; */
     height: 360px;
   }
 }
