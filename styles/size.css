@@ -459,6 +459,27 @@ IT IS ON THE WIDTH OF 1350px
   .proj-4 {
     margin-bottom: 15px;
   }
+
+
+
+
+  .vid-1-1 {
+    position: absolute;
+    left: 40% !important;
+    bottom: 5%;
+    z-index: -10000000;
+  }
+  
+  .vid-1-2 {
+    position: absolute;
+    right: 30% !important;
+    top: 5%;
+    z-index: -100000000;
+  }
+  
+
+
+
 }
 
 @media (max-width: 510px) {
@@ -558,6 +579,9 @@ IT IS ON THE WIDTH OF 1350px
   .proj-right > a > img {
     height: 130px !important;
   }
+  .about-btn {
+    margin-left: 27%;
+  }
 }
 @media (max-width: 400px) {
   .proj-right > a > img {
@@ -603,6 +627,32 @@ IT IS ON THE WIDTH OF 1350px
   .projects > .heading > h4 {
     font-size: 30px;
   }
+
+
+
+
+
+
+
+
+  .vid-1-1 {
+    position: absolute;
+    left: -73% !important;
+    bottom: -8% !important;
+    z-index: -10000000;
+  }
+  
+  .vid-1-2 {
+    position: absolute;
+    right: 50% !important;
+    top: 5%;
+    z-index: -100000000;
+  }
+  
+  
+
+
+
 }
 
 @media (max-width: 360px) {
@@ -631,6 +681,17 @@ IT IS ON THE WIDTH OF 1350px
   .year {
     top: -26px;
   }
+
+  .about-btn {
+    margin-left: 20%;
+  }
+
+
+
+
+
+
+
 }
 
 @media (max-width: 340px) {
