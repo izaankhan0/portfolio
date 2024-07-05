@@ -149,21 +149,21 @@ const textLoad = () => {
 textLoad();
 setInterval(textLoad, 24000); // Adjusted interval for complete cycle
 
-window.addEventListener('load', function() {
-  // Minimum display time for the preloader (2 seconds)
-  const displayTime = 2000;
+// window.addEventListener('load', function() {
+//   // Minimum display time for the preloader (2 seconds)
+//   const displayTime = 2000;
 
-  // Function to hide the preloader
-  const hidePreloader = function() {
-      const preloader = document.getElementById('preloader');
-      preloader.style.display = 'none';
-      // Allow scrolling again
-      document.body.style.overflow = 'auto';
-  };
+//   // Function to hide the preloader
+//   const hidePreloader = function() {
+//       const preloader = document.getElementById('preloader');
+//       preloader.style.display = 'none';
+//       // Allow scrolling again
+//       document.body.style.overflow = 'auto';
+//   };
 
-  // Set a timeout to hide the preloader after 2 seconds
-  setTimeout(hidePreloader, displayTime);
+//   // Set a timeout to hide the preloader after 2 seconds
+//   setTimeout(hidePreloader, displayTime);
 
-  // Prevent scrolling during preloader display
-  document.body.style.overflow = 'hidden';
-});
+//   // Prevent scrolling during preloader display
+//   document.body.style.overflow = 'hidden';
+// });
